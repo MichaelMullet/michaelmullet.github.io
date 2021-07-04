@@ -1,0 +1,158 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: helvetica;
+}
+
+#body {
+    width: 100%;
+    height: 100%;
+}
+
+#navbar {
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    border-bottom: 1px solid rgb(37, 37, 37);
+    top: 0;
+}
+
+.nav-link {
+    display: block;
+    padding: 20px 50px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(31, 31, 31);
+    transition: all 0.2s;
+    float: right;
+}
+
+.nav-link:hover {
+    background-color: rgba(99, 0, 230, 0.3);
+}
+
+#welcome-section {
+    background-image: linear-gradient(135deg, #4a86e8cc, #9900ff69);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title {
+    font-size: 5vw;
+    color: rgb(37, 37, 37);
+}
+
+#projects {
+    height: 100vh;
+    background-color: white;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+    position: relative;
+    text-align: center;
+}
+
+#proj-intro {
+    color: rgb(37, 37, 37);
+    font-size: 3vw;
+    padding-top: 15vh;
+    margin-top: 0vh;
+}
+
+#proj-content {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5vw;
+}
+
+.page-img {
+    width: 40vw;
+    height: 75%;
+    margin-bottom: 2vh;
+}
+
+a.page:link, a.page:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a.contact-link:link, a.contact-link:visited {
+    color: #fff0e5;
+    text-decoration: none;
+}
+
+button[type=button] {
+    width: 11vw;
+    padding: 14px 20px;
+    color: white;
+    background-color: hsl(266, 100%, 45%);
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1vw;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+button[type=button] span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button[type=button] span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button[type=button]:hover span {
+    padding-right: 25px;
+}
+
+button[type=button]:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#contact {
+    height: 100vh;
+    background-color: rgb(63, 63, 63);
+    color: #fff0e5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6vw;
+}
+
+#farewell {
+    font-size: 5vw;
+    margin-bottom: 0vh;
+}
+
+#github {
+    margin-top: 3vh;
+}
+
+@media screen and (max-width: 600px) {
+    #navbar {
+        position: relative;
+        background-color: #4a86e8cc;
+    }
+    .nav-link {
+        text-align: center;
+        float: none;
+    }
+}
