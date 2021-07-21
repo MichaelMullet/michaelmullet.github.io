@@ -178,11 +178,12 @@ button[type="button"]:hover span:after {
     text-align: center;
     float: none;
   }
-  #welcome-section, #projects, #contact {
+  #welcome-section,
+  #projects,
+  #contact {
     height: auto;
     padding: 100px 15px 100px 15px;
     font-size: 2.6vh;
-    
   }
   #title {
     font-size: 8vh;
@@ -195,7 +196,8 @@ button[type="button"]:hover span:after {
     font-size: 4vh;
     padding-top: 0;
   }
-  #proj-content, .page-img {
+  #proj-content,
+  .page-img {
     flex-direction: column;
     margin-top: 0;
   }
