@@ -89,6 +89,10 @@ body {
   font-size: 1.5vw;
 }
 
+.project-tile {
+  margin: 0 5vw 0 5vw;
+}
+
 .page-img {
   width: 40vw;
   height: 75%;
@@ -108,7 +112,7 @@ a.contact-link:visited {
 }
 
 button[type="button"] {
-  width: 12.5vw;
+  width: auto;
   padding: 14px 12px;
   color: white;
   background-color: hsl(266, 100%, 45%);
@@ -169,10 +173,39 @@ button[type="button"]:hover span:after {
 @media screen and (max-width: 600px) {
   #navbar {
     position: relative;
-    background-color: #4a86e8cc;
   }
   .nav-link {
     text-align: center;
     float: none;
+  }
+  #welcome-section, #projects, #contact {
+    height: auto;
+    padding: 100px 15px 100px 15px;
+    font-size: 2.6vh;
+    
+  }
+  #title {
+    font-size: 8vh;
+    text-align: center;
+  }
+  button[type="button"] {
+    font-size: 2vh;
+  }
+  #proj-intro {
+    font-size: 4vh;
+    padding-top: 0;
+  }
+  #proj-content, .page-img {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .page-img {
+    width: 40vh;
+    height: auto;
+    margin-top: 10vh;
+  }
+  #farewell {
+    font-size: 5vh;
+    text-align: center;
   }
 }
