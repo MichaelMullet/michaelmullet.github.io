@@ -1,0 +1,51 @@
+header {
+    font-size: 2rem;
+}
+
+#content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+#navbar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.nav-link {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.nav-link.active {
+    background-color: blueviolet;
+    color: white;
+}
+
+.nav-link:hover:not(.active) {
+    background-color: rgb(226, 226, 226);
+}
+
+@media screen and (max-width: 700px) {
+    #navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .nav-link {float: left;}
+    #content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+    .nav-link {
+        text-align: center;
+        float: none;
+    }
+}
